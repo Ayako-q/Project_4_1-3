@@ -1,0 +1,37 @@
+package com.example.project_4_loops;
+import java.util.Scanner;
+public class demonstratee {
+    public static void main (String[] args){
+        Scanner in = new Scanner(System.in);
+        boolean x = false;
+        int i = 0;
+        while(x == false){
+            System.out.println("Hi! Type Y if you want to continue or N if you don't");
+            String userinput = in.nextLine();
+            if (userinput.equals("Y")){
+                x = true;
+                System.out.print("Okay, lets continue");
+            } else if(userinput.equals("N")){
+                System.out.println("Okay, bye!");
+                break; //demonstrating while loops
+            } //System will ask user to type his answer till it sees answer in form Y or N
+        }
+        do{
+            System.out.println("Starting in " + i);
+            i++;
+        }while(i<=5); //demonstrating do while loops
+        for(int j=0; j<=10; j++) {
+            System.out.println(j); //output numbers from 1 to 10
+        }
+        System.out.println("Now counting from 10 to 1");
+        for(int j=10; j>=0; j--) {
+            System.out.println(j);} //output numbers from 10 to 1
+        //and now demonstrating nested loops
+        for(i=1; i<=10; i++){
+            System.out.println("");
+            for(int o=1; i>=o; o++) {
+                System.out.print("@");
+            }
+        }
+    }
+}
